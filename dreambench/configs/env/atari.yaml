@@ -1,0 +1,3 @@
+name: atari
+wrapper: dreambench.envs.atari.wrapper.AtariEnvWrapper
+scenarios_path: dreambench/envs/atari/scenarios.yaml

@@ -1,0 +1,92 @@
+scenarios:
+  # --- Reward Fidelity ---
+  - name: breakout_basic_rally
+    env_id: ALE/Breakout-v5
+    actions: [1, 0, 0, 2, 2, 3, 3, 0, 0, 2, 2, 3, 0, 0, 0]
+    probe: reward_fidelity
+    description: >
+      Basic Breakout rally. Tests whether the model correctly predicts
+      reward timing when the ball hits bricks.
+
+  - name: pong_serve_and_return
+    env_id: ALE/Pong-v5
+    actions: [0, 0, 1, 2, 2, 3, 3, 2, 2, 0, 0, 3, 3, 2, 0]
+    probe: reward_fidelity
+    description: >
+      Pong serve and return sequence. Tests reward prediction accuracy
+      for scoring events.
+
+  - name: space_invaders_opening
+    env_id: ALE/SpaceInvaders-v5
+    actions: [1, 0, 0, 3, 3, 3, 1, 0, 2, 2, 2, 1, 0, 3, 3]
+    probe: reward_fidelity
+    description: >
+      Space Invaders opening sequence with shooting. Tests whether
+      the model correctly predicts hit/miss rewards.
+
+  # --- Object Permanence ---
+  - name: breakout_ball_behind_bricks
+    env_id: ALE/Breakout-v5
+    actions: [1, 0, 2, 2, 3, 3, 2, 2, 0, 0, 3, 3, 2, 2, 0, 0, 3, 3, 2, 0]
+    probe: object_permanence
+    description: >
+      Extended Breakout rally where the ball passes behind remaining
+      brick rows. Tests whether the model preserves ball existence when
+      it is partially occluded by bricks.
+
+  - name: space_invaders_enemies_behind_shields
+    env_id: ALE/SpaceInvaders-v5
+    actions: [0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0]
+    probe: object_permanence
+    description: >
+      Hold position behind shields while enemies descend. Tests whether
+      the model maintains enemy entities that are partially hidden behind
+      the player's shield barriers.
+
+  # --- Entity Integrity ---
+  - name: space_invaders_enemy_count
+    env_id: ALE/SpaceInvaders-v5
+    actions: [1, 0, 3, 3, 0, 2, 2, 1, 0, 3, 3, 0, 2, 2, 0]
+    probe: entity_integrity
+    description: >
+      Shoot multiple enemies in sequence. Tests whether the model
+      correctly removes destroyed enemies while preserving the remaining
+      formation.
+
+  - name: freeway_chicken_tracking
+    env_id: ALE/Freeway-v5
+    actions: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    probe: entity_integrity
+    description: >
+      Move the chicken steadily upward across traffic lanes. Tests
+      whether the model maintains a consistent chicken entity as it
+      crosses among moving cars.
+
+  # --- Temporal Coherence ---
+  - name: montezuma_room_state
+    env_id: ALE/MontezumaRevenge-v5
+    actions: [0, 0, 2, 2, 2, 5, 5, 5, 0, 0, 2, 2, 2, 0, 0]
+    probe: temporal_coherence
+    description: >
+      Move around the initial room in Montezuma's Revenge. Tests
+      whether the model maintains consistent room layout and platform
+      positions across the trajectory.
+
+  # --- Physics Consistency ---
+  - name: pong_ball_trajectory
+    env_id: ALE/Pong-v5
+    actions: [0, 0, 0, 2, 2, 2, 3, 3, 3, 0, 0, 0, 2, 2, 2]
+    probe: physics_consistency
+    description: >
+      Serve and let the ball bounce. Tests whether the model predicts
+      physically consistent ball trajectories with correct angle of
+      reflection off paddles and walls.
+
+  - name: breakout_ball_bounce
+    env_id: ALE/Breakout-v5
+    actions: [1, 0, 0, 3, 3, 0, 0, 2, 2, 3, 3, 0, 0, 2, 2]
+    probe: physics_consistency
+    description: >
+      Breakout rally focusing on ball bounces off the paddle and walls.
+      Tests whether the model produces physically plausible ball
+      trajectories after each bounce.

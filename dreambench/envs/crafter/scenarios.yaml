@@ -1,0 +1,36 @@
+scenarios:
+  - name: craft_wooden_pickaxe
+    env_id: crafter
+    actions: [5, 5, 5, 5, 8, 11, 0, 0, 0, 0]
+    probe: temporal_coherence
+    description: >
+      Chop trees (do action near tree) to gather wood, place a crafting
+      table, then craft a wooden pickaxe. Tests whether the world model
+      tracks inventory state changes correctly across the crafting chain.
+
+  - name: combat_zombie
+    env_id: crafter
+    actions: [0, 3, 3, 3, 5, 5, 5, 5, 4, 4]
+    probe: entity_integrity
+    description: >
+      Move toward a zombie and attack it repeatedly. Tests whether the
+      world model maintains consistent entity appearance and health state
+      for the zombie across frames.
+
+  - name: resource_gathering
+    env_id: crafter
+    actions: [5, 1, 5, 2, 5, 3, 5, 4, 5, 0, 5, 0]
+    probe: reward_fidelity
+    description: >
+      Collect various resources (wood, stone) by moving around and using
+      the do action near resource tiles. Tests whether reward signals
+      are predicted accurately when resources are gathered.
+
+  - name: terrain_exploration
+    env_id: crafter
+    actions: [1, 1, 1, 3, 3, 3, 2, 2, 2, 4, 4, 4]
+    probe: physics_consistency
+    description: >
+      Move in a square pattern across different terrain types. Tests
+      whether the world model correctly predicts movement physics,
+      including blocked movement by obstacles like water or stone.

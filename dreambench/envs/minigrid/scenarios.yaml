@@ -1,0 +1,36 @@
+scenarios:
+  - name: door_key_basic
+    env_id: MiniGrid-DoorKey-5x5-v0
+    actions: [2, 2, 3, 1, 2, 2, 5, 2, 2]
+    probe: object_permanence
+    description: >
+      Navigate to key, pick it up, turn to face door, walk to door, toggle
+      it open, and walk through. Tests whether the world model preserves the
+      key entity after pickup and correctly opens the door.
+
+  - name: multiroom_traversal
+    env_id: MiniGrid-MultiRoom-N2-S4-v0
+    actions: [2, 2, 1, 2, 5, 2, 2, 2, 1, 2, 2]
+    probe: temporal_coherence
+    description: >
+      Navigate from the first room through a door into the second room.
+      Tests whether room state is maintained consistently as the agent
+      transitions between rooms.
+
+  - name: lava_crossing_path
+    env_id: MiniGrid-LavaCrossingS9N1-v0
+    actions: [2, 2, 1, 2, 2, 0, 2, 2, 1, 2, 2, 2]
+    probe: physics_consistency
+    description: >
+      Carefully navigate around lava tiles to reach the goal. Tests
+      whether the world model enforces lava collision physics — stepping
+      on lava should terminate the episode.
+
+  - name: key_corridor_search
+    env_id: MiniGrid-KeyCorridorS3R1-v0
+    actions: [2, 2, 1, 2, 2, 3, 1, 1, 2, 2, 5, 2]
+    probe: entity_integrity
+    description: >
+      Search a corridor for a key, pick it up, and use it on the locked
+      door. Tests whether key and door entities maintain their visual
+      identity and state throughout the interaction sequence.

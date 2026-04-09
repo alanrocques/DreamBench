@@ -1,0 +1,3 @@
+name: mock
+adapter: dreambench.adapters.mock.MockAdapter
+noise_std: 0.1

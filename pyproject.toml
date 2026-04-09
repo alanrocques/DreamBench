@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dreambench"
+version = "0.1.0"
+description = "A systematic benchmark for measuring hallucination in learned world models"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.24",
+    "pyyaml>=6.0",
+    "hydra-core>=1.3",
+    "omegaconf>=2.3",
+]
+
+[project.optional-dependencies]
+atari = [
+    "gymnasium[atari,accept-rom-license]>=0.29",
+]
+minigrid = [
+    "minigrid>=2.3",
+]
+crafter = [
+    "crafter>=1.8",
+]
+viz = [
+    "matplotlib>=3.7",
+    "jinja2>=3.1",
+]
+cv = [
+    "opencv-python>=4.8",
+]
+all = [
+    "dreambench[atari,minigrid,crafter,viz,cv]",
+]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "dreambench[all]",
+]
+
+[tool.setuptools.packages.find]
+include = ["dreambench*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
