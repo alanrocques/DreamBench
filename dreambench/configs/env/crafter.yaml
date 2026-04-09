@@ -1,0 +1,3 @@
+name: crafter
+wrapper: dreambench.envs.crafter.wrapper.CrafterEnvWrapper
+scenarios_path: dreambench/envs/crafter/scenarios.yaml

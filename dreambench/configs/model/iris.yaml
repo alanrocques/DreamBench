@@ -1,0 +1,4 @@
+name: iris
+adapter: dreambench.adapters.iris.IRISAdapter
+checkpoint_path: ""
+latent_dim: 256

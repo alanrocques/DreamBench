@@ -1,0 +1,35 @@
+scenarios:
+  - name: mock_reward_test
+    env_id: MockEnv-v0
+    actions: [0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2]
+    probe: reward_fidelity
+    description: >
+      Synthetic scenario for testing reward fidelity probe.
+
+  - name: mock_permanence_test
+    env_id: MockEnv-v0
+    actions: [0, 0, 1, 1, 2, 2, 3, 3, 0, 0, 1, 1, 2, 2, 3]
+    probe: object_permanence
+    description: >
+      Synthetic scenario for testing object permanence detection.
+
+  - name: mock_physics_test
+    env_id: MockEnv-v0
+    actions: [3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 3, 3, 3, 2, 2]
+    probe: physics_consistency
+    description: >
+      Synthetic scenario for testing physics consistency.
+
+  - name: mock_entity_test
+    env_id: MockEnv-v0
+    actions: [0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+    probe: entity_integrity
+    description: >
+      Synthetic scenario for testing entity integrity.
+
+  - name: mock_temporal_test
+    env_id: MockEnv-v0
+    actions: [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1]
+    probe: temporal_coherence
+    description: >
+      Synthetic scenario for testing temporal coherence.

@@ -1,0 +1,3 @@
+name: minigrid
+wrapper: dreambench.envs.minigrid.wrapper.MiniGridEnvWrapper
+scenarios_path: dreambench/envs/minigrid/scenarios.yaml

@@ -90,6 +90,12 @@ class BenchmarkRunner:
         self, scenario: Scenario, gt_trajectory: Trajectory
     ) -> Trajectory:
         """Run the world model on a scenario using the ground-truth initial obs."""
+        # If the adapter supports GT replay (e.g. MockAdapter), provide GT data
+        if hasattr(self.adapter, "set_ground_truth"):
+            self.adapter.set_ground_truth(
+                gt_trajectory.observations, gt_trajectory.rewards
+            )
+
         initial_obs = gt_trajectory.observations[0]
         self.adapter.reset(initial_obs)
 

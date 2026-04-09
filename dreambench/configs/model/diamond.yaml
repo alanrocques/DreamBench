@@ -1,0 +1,4 @@
+name: diamond
+adapter: dreambench.adapters.diamond.DIAMONDAdapter
+checkpoint_path: ""
+latent_dim: 512

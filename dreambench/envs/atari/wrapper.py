@@ -14,10 +14,11 @@ class AtariEnvWrapper(BaseEnvWrapper):
 
     def run_ground_truth(self, scenario: Scenario) -> Trajectory:
         try:
+            import ale_py  # noqa: F401 — registers ALE environments
             import gymnasium as gym
         except ImportError:
             raise ImportError(
-                "Atari support requires gymnasium. "
+                "Atari support requires gymnasium and ale-py. "
                 "Install with: pip install dreambench[atari]"
             )
 

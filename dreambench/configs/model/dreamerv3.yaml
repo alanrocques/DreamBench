@@ -1,0 +1,4 @@
+name: dreamerv3
+adapter: dreambench.adapters.dreamerv3.DreamerV3Adapter
+checkpoint_path: ""
+latent_dim: 512

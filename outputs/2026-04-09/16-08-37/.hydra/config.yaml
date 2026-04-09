@@ -1,0 +1,10 @@
+model:
+  name: mock
+  adapter: dreambench.adapters.mock.MockAdapter
+  noise_std: 0.1
+env:
+  name: mock
+  wrapper: dreambench.envs.mock.wrapper.MockEnvWrapper
+  scenarios_path: dreambench/envs/mock/scenarios.yaml
+output_dir: results/${model.name}
+probes: []

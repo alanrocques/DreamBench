@@ -31,12 +31,31 @@ class TestMockAdapter:
     def test_reset_and_step(self):
         adapter = MockAdapter(noise_std=0.01)
         obs = np.zeros((84, 84, 3), dtype=np.uint8)
+        gt_obs = [obs, obs.copy(), obs.copy()]
+        gt_rewards = [0.0, 1.0]
+        adapter.set_ground_truth(gt_obs, gt_rewards)
         adapter.reset(obs)
 
         next_obs, reward, done = adapter.step(0)
         assert next_obs.shape == (84, 84, 3)
         assert isinstance(reward, float)
         assert isinstance(done, bool)
+
+    def test_perfect_replay(self):
+        adapter = MockAdapter(noise_std=0.0)
+        obs0 = np.zeros((10, 10, 3), dtype=np.uint8)
+        obs1 = np.ones((10, 10, 3), dtype=np.uint8) * 128
+        obs2 = np.ones((10, 10, 3), dtype=np.uint8) * 255
+        adapter.set_ground_truth([obs0, obs1, obs2], [1.0, 2.0])
+        adapter.reset(obs0)
+
+        next_obs, reward, done = adapter.step(0)
+        np.testing.assert_array_equal(next_obs, obs1)
+        assert reward == 1.0
+
+        next_obs, reward, done = adapter.step(0)
+        np.testing.assert_array_equal(next_obs, obs2)
+        assert reward == 2.0
 
     def test_raises_without_reset(self):
         adapter = MockAdapter()

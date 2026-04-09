@@ -1,0 +1,3 @@
+name: mock
+wrapper: dreambench.envs.mock.wrapper.MockEnvWrapper
+scenarios_path: dreambench/envs/mock/scenarios.yaml

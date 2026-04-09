@@ -1,0 +1,15 @@
+[2026-04-09 16:08:37,366][__main__][INFO] - Loaded adapter: mock
+[2026-04-09 16:08:37,367][__main__][INFO] - Loaded env wrapper: mock
+[2026-04-09 16:08:37,368][__main__][INFO] - Loaded 5 scenarios from dreambench/envs/mock/scenarios.yaml
+[2026-04-09 16:08:37,368][dreambench.runner][INFO] - Running scenario: mock_reward_test
+[2026-04-09 16:08:37,399][dreambench.runner][INFO] -   mock_reward_test / reward_fidelity: score=0.067
+[2026-04-09 16:08:37,399][dreambench.runner][INFO] - Running scenario: mock_permanence_test
+[2026-04-09 16:08:37,412][dreambench.runner][INFO] -   mock_permanence_test / object_permanence: score=0.000
+[2026-04-09 16:08:37,412][dreambench.runner][INFO] - Running scenario: mock_physics_test
+[2026-04-09 16:08:37,421][dreambench.runner][INFO] -   mock_physics_test / physics_consistency: score=0.000
+[2026-04-09 16:08:37,421][dreambench.runner][INFO] - Running scenario: mock_entity_test
+[2026-04-09 16:08:37,433][dreambench.runner][INFO] -   mock_entity_test / entity_integrity: score=0.344
+[2026-04-09 16:08:37,433][dreambench.runner][INFO] - Running scenario: mock_temporal_test
+[2026-04-09 16:08:37,437][dreambench.runner][INFO] -   mock_temporal_test / temporal_coherence: score=1.000
+[2026-04-09 16:08:37,437][dreambench.runner][INFO] - Benchmark complete. Overall score: 0.282
+[2026-04-09 16:08:37,438][__main__][INFO] - Results saved to results/mock/results.json

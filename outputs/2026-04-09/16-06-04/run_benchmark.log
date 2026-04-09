@@ -1,0 +1,25 @@
+[2026-04-09 16:06:04,941][__main__][INFO] - Loaded adapter: mock
+[2026-04-09 16:06:04,942][__main__][INFO] - Loaded env wrapper: atari
+[2026-04-09 16:06:04,945][__main__][INFO] - Loaded 10 scenarios from dreambench/envs/atari/scenarios.yaml
+[2026-04-09 16:06:04,945][dreambench.runner][INFO] - Running scenario: breakout_basic_rally
+[2026-04-09 16:06:05,003][dreambench.runner][ERROR] - Scenario 'breakout_basic_rally' failed: Namespace ALE not found. Have you installed the proper package for ALE?
+[2026-04-09 16:06:05,003][dreambench.runner][INFO] - Running scenario: pong_serve_and_return
+[2026-04-09 16:06:05,003][dreambench.runner][ERROR] - Scenario 'pong_serve_and_return' failed: Namespace ALE not found. Have you installed the proper package for ALE?
+[2026-04-09 16:06:05,003][dreambench.runner][INFO] - Running scenario: space_invaders_opening
+[2026-04-09 16:06:05,003][dreambench.runner][ERROR] - Scenario 'space_invaders_opening' failed: Namespace ALE not found. Have you installed the proper package for ALE?
+[2026-04-09 16:06:05,003][dreambench.runner][INFO] - Running scenario: breakout_ball_behind_bricks
+[2026-04-09 16:06:05,003][dreambench.runner][ERROR] - Scenario 'breakout_ball_behind_bricks' failed: Namespace ALE not found. Have you installed the proper package for ALE?
+[2026-04-09 16:06:05,003][dreambench.runner][INFO] - Running scenario: space_invaders_enemies_behind_shields
+[2026-04-09 16:06:05,003][dreambench.runner][ERROR] - Scenario 'space_invaders_enemies_behind_shields' failed: Namespace ALE not found. Have you installed the proper package for ALE?
+[2026-04-09 16:06:05,003][dreambench.runner][INFO] - Running scenario: space_invaders_enemy_count
+[2026-04-09 16:06:05,003][dreambench.runner][ERROR] - Scenario 'space_invaders_enemy_count' failed: Namespace ALE not found. Have you installed the proper package for ALE?
+[2026-04-09 16:06:05,003][dreambench.runner][INFO] - Running scenario: freeway_chicken_tracking
+[2026-04-09 16:06:05,003][dreambench.runner][ERROR] - Scenario 'freeway_chicken_tracking' failed: Namespace ALE not found. Have you installed the proper package for ALE?
+[2026-04-09 16:06:05,003][dreambench.runner][INFO] - Running scenario: montezuma_room_state
+[2026-04-09 16:06:05,003][dreambench.runner][ERROR] - Scenario 'montezuma_room_state' failed: Namespace ALE not found. Have you installed the proper package for ALE?
+[2026-04-09 16:06:05,003][dreambench.runner][INFO] - Running scenario: pong_ball_trajectory
+[2026-04-09 16:06:05,003][dreambench.runner][ERROR] - Scenario 'pong_ball_trajectory' failed: Namespace ALE not found. Have you installed the proper package for ALE?
+[2026-04-09 16:06:05,003][dreambench.runner][INFO] - Running scenario: breakout_ball_bounce
+[2026-04-09 16:06:05,003][dreambench.runner][ERROR] - Scenario 'breakout_ball_bounce' failed: Namespace ALE not found. Have you installed the proper package for ALE?
+[2026-04-09 16:06:05,003][dreambench.runner][INFO] - Benchmark complete. Overall score: 0.000
+[2026-04-09 16:06:05,004][__main__][INFO] - Results saved to results/mock/results.json
