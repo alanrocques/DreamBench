@@ -1,0 +1,13 @@
+[2026-04-09 16:35:05,099][__main__][INFO] - Loaded adapter: mock
+[2026-04-09 16:35:05,099][__main__][INFO] - Loaded env wrapper: crafter
+[2026-04-09 16:35:05,101][__main__][INFO] - Loaded 4 scenarios from dreambench/envs/crafter/scenarios.yaml
+[2026-04-09 16:35:05,101][dreambench.runner][INFO] - Running scenario: craft_wooden_pickaxe
+[2026-04-09 16:35:05,645][dreambench.runner][INFO] -   craft_wooden_pickaxe / temporal_coherence: score=1.000
+[2026-04-09 16:35:05,645][dreambench.runner][INFO] - Running scenario: combat_zombie
+[2026-04-09 16:35:06,131][dreambench.runner][INFO] -   combat_zombie / entity_integrity: score=1.000
+[2026-04-09 16:35:06,131][dreambench.runner][INFO] - Running scenario: resource_gathering
+[2026-04-09 16:35:06,620][dreambench.runner][INFO] -   resource_gathering / reward_fidelity: score=1.000
+[2026-04-09 16:35:06,620][dreambench.runner][INFO] - Running scenario: terrain_exploration
+[2026-04-09 16:35:07,086][dreambench.runner][INFO] -   terrain_exploration / physics_consistency: score=1.000
+[2026-04-09 16:35:07,086][dreambench.runner][INFO] - Benchmark complete. Overall score: 1.000
+[2026-04-09 16:35:07,087][__main__][INFO] - Results saved to results/crafter/results.json

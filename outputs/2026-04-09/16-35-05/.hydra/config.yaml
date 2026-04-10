@@ -1,0 +1,10 @@
+model:
+  name: mock
+  adapter: dreambench.adapters.mock.MockAdapter
+  noise_std: 0
+env:
+  name: crafter
+  wrapper: dreambench.envs.crafter.wrapper.CrafterEnvWrapper
+  scenarios_path: dreambench/envs/crafter/scenarios.yaml
+output_dir: results/${env.name}
+probes: []

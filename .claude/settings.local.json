@@ -5,7 +5,8 @@
       "mcp__plugin_claude-mem_mcp-search__smart_outline",
       "mcp__plugin_claude-mem_mcp-search__get_observations",
       "Bash(pip install:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(chmod:*)"
     ]
   }
 }

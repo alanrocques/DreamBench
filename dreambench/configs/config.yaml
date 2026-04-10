@@ -1,8 +1,9 @@
 defaults:
   - model: mock
   - env: mock
+  - _self_
 
-output_dir: results/${model.name}
+output_dir: results/${env.name}
 
 # Which probes to run (empty = all available)
 probes: []

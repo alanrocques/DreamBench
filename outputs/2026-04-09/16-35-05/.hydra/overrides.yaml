@@ -1,0 +1,3 @@
+- model=mock
+- env=crafter
+- model.noise_std=0

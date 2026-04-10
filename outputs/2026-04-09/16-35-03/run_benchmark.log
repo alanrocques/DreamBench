@@ -1,0 +1,13 @@
+[2026-04-09 16:35:03,032][__main__][INFO] - Loaded adapter: mock
+[2026-04-09 16:35:03,033][__main__][INFO] - Loaded env wrapper: minigrid
+[2026-04-09 16:35:03,035][__main__][INFO] - Loaded 4 scenarios from dreambench/envs/minigrid/scenarios.yaml
+[2026-04-09 16:35:03,035][dreambench.runner][INFO] - Running scenario: door_key_basic
+[2026-04-09 16:35:03,627][dreambench.runner][INFO] -   door_key_basic / object_permanence: score=1.000
+[2026-04-09 16:35:03,627][dreambench.runner][INFO] - Running scenario: multiroom_traversal
+[2026-04-09 16:35:03,830][dreambench.runner][INFO] -   multiroom_traversal / temporal_coherence: score=1.000
+[2026-04-09 16:35:03,831][dreambench.runner][INFO] - Running scenario: lava_crossing_path
+[2026-04-09 16:35:04,016][dreambench.runner][INFO] -   lava_crossing_path / physics_consistency: score=0.987
+[2026-04-09 16:35:04,016][dreambench.runner][INFO] - Running scenario: key_corridor_search
+[2026-04-09 16:35:04,160][dreambench.runner][INFO] -   key_corridor_search / entity_integrity: score=1.000
+[2026-04-09 16:35:04,160][dreambench.runner][INFO] - Benchmark complete. Overall score: 0.997
+[2026-04-09 16:35:04,161][__main__][INFO] - Results saved to results/minigrid/results.json

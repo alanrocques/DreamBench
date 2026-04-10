@@ -1,0 +1,7 @@
+name: dreamerv3_breakout
+adapter: dreambench.adapters.dreamerv3.DreamerV3Adapter
+checkpoint_path: checkpoints/dreamerv3_breakout/latest.pt
+obs_size: 64
+action_size: 4
+device: cpu
+grayscale: false

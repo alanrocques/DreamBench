@@ -1,0 +1,3 @@
+- model=mock
+- env=minigrid
+- model.noise_std=0

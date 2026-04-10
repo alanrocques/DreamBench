@@ -1,0 +1,10 @@
+name: dreamerv3_crafter
+adapter: dreambench.adapters.dreamerv3.DreamerV3Adapter
+checkpoint_path: checkpoints/dreamerv3_crafter/latest.pt
+obs_size: 64
+action_size: 17
+device: cpu
+grayscale: false
+dyn_deter: 4096
+dyn_hidden: 1024
+units: 1024
