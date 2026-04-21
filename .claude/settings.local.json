@@ -6,7 +6,16 @@
       "mcp__plugin_claude-mem_mcp-search__get_observations",
       "Bash(pip install:*)",
       "Bash(python:*)",
-      "Bash(chmod:*)"
+      "Bash(chmod:*)",
+      "Bash(grep -r \"cuda\\\\|gpu\\\\|GPU\\\\|CUDA\\\\|device\\\\|T4\\\\|V100\" /Users/alanrocque/Documents/code/DreamBench/third_party/dreamerv3-torch/*.py)",
+      "Bash(xargs ls:*)",
+      "WebFetch(domain:github.com)",
+      "WebSearch",
+      "Bash(git clone:*)",
+      "Read(//private/tmp/diamond-research/**)",
+      "Read(//tmp/diamond-research/**)",
+      "Read(//private/tmp/iris-research/**)",
+      "Read(//tmp/iris-research/**)"
     ]
   }
 }

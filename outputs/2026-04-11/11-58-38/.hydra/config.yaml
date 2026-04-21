@@ -1,0 +1,13 @@
+model:
+  name: delta_iris_crafter
+  adapter: dreambench.adapters.delta_iris.DeltaIRISAdapter
+  checkpoint_path: pretrained
+  device: cpu
+  num_actions: 17
+  obs_size: 64
+env:
+  name: mock
+  wrapper: dreambench.envs.mock.wrapper.MockEnvWrapper
+  scenarios_path: dreambench/envs/mock/scenarios.yaml
+output_dir: results/${env.name}
+probes: []

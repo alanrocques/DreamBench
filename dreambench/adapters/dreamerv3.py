@@ -47,6 +47,7 @@ class DreamerV3Adapter(WorldModelAdapter):
     ):
         self.obs_size = obs_size
         self.action_size = action_size
+        self.num_actions = action_size
         self.device = torch.device(device)
         self.grayscale = grayscale
         self._original_obs_shape = None

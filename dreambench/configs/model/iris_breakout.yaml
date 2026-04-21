@@ -1,6 +1,6 @@
-name: iris
+name: iris_breakout
 adapter: dreambench.adapters.iris.IRISAdapter
-checkpoint_path: ""
+checkpoint_path: pretrained
 game: Breakout
 device: cpu
 num_actions: 4

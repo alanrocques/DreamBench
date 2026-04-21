@@ -1,0 +1,13 @@
+[2026-04-11 12:58:22,530][__main__][INFO] - Loaded adapter: delta_iris_crafter
+[2026-04-11 12:58:22,531][__main__][INFO] - Loaded env wrapper: crafter
+[2026-04-11 12:58:22,533][__main__][INFO] - Loaded 4 scenarios from dreambench/envs/crafter/scenarios.yaml
+[2026-04-11 12:58:22,533][dreambench.runner][INFO] - Running scenario: craft_wooden_pickaxe
+[2026-04-11 12:58:23,320][dreambench.runner][INFO] -   craft_wooden_pickaxe / temporal_coherence: score=1.000
+[2026-04-11 12:58:23,320][dreambench.runner][INFO] - Running scenario: combat_zombie
+[2026-04-11 12:58:24,090][dreambench.runner][INFO] -   combat_zombie / entity_integrity: score=0.286
+[2026-04-11 12:58:24,090][dreambench.runner][INFO] - Running scenario: resource_gathering
+[2026-04-11 12:58:24,819][dreambench.runner][INFO] -   resource_gathering / reward_fidelity: score=0.833
+[2026-04-11 12:58:24,819][dreambench.runner][INFO] - Running scenario: terrain_exploration
+[2026-04-11 12:58:25,544][dreambench.runner][INFO] -   terrain_exploration / physics_consistency: score=0.434
+[2026-04-11 12:58:25,544][dreambench.runner][INFO] - Benchmark complete. Overall score: 0.638
+[2026-04-11 12:58:25,546][__main__][INFO] - Results saved to results/crafter/results.json

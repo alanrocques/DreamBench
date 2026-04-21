@@ -1,0 +1,25 @@
+[2026-04-11 13:01:01,693][__main__][INFO] - Loaded adapter: iris_breakout
+[2026-04-11 13:01:01,694][__main__][INFO] - Loaded env wrapper: atari
+[2026-04-11 13:01:01,698][__main__][INFO] - Loaded 10 scenarios from dreambench/envs/atari/scenarios.yaml
+[2026-04-11 13:01:01,698][dreambench.runner][INFO] - Running scenario: breakout_basic_rally
+[2026-04-11 13:01:02,502][dreambench.runner][INFO] -   breakout_basic_rally / reward_fidelity: score=1.000
+[2026-04-11 13:01:02,503][dreambench.runner][INFO] - Running scenario: pong_serve_and_return
+[2026-04-11 13:01:03,230][dreambench.runner][INFO] -   pong_serve_and_return / reward_fidelity: score=1.000
+[2026-04-11 13:01:03,231][dreambench.runner][INFO] - Running scenario: space_invaders_opening
+[2026-04-11 13:01:03,738][dreambench.runner][INFO] -   space_invaders_opening / reward_fidelity: score=0.667
+[2026-04-11 13:01:03,738][dreambench.runner][INFO] - Running scenario: breakout_ball_behind_bricks
+[2026-04-11 13:01:04,716][dreambench.runner][INFO] -   breakout_ball_behind_bricks / object_permanence: score=0.444
+[2026-04-11 13:01:04,716][dreambench.runner][INFO] - Running scenario: space_invaders_enemies_behind_shields
+[2026-04-11 13:01:05,482][dreambench.runner][INFO] -   space_invaders_enemies_behind_shields / object_permanence: score=0.029
+[2026-04-11 13:01:05,482][dreambench.runner][INFO] - Running scenario: space_invaders_enemy_count
+[2026-04-11 13:01:06,271][dreambench.runner][INFO] -   space_invaders_enemy_count / entity_integrity: score=0.106
+[2026-04-11 13:01:06,271][dreambench.runner][INFO] - Running scenario: freeway_chicken_tracking
+[2026-04-11 13:01:07,048][dreambench.runner][INFO] -   freeway_chicken_tracking / entity_integrity: score=0.119
+[2026-04-11 13:01:07,048][dreambench.runner][INFO] - Running scenario: montezuma_room_state
+[2026-04-11 13:01:07,089][dreambench.runner][ERROR] - Scenario 'montezuma_room_state' failed: Scenario 'montezuma_room_state' requires action 5 but adapter only supports 4 actions (0-3). This scenario needs a model trained on the matching game.
+[2026-04-11 13:01:07,089][dreambench.runner][INFO] - Running scenario: pong_ball_trajectory
+[2026-04-11 13:01:07,840][dreambench.runner][INFO] -   pong_ball_trajectory / physics_consistency: score=0.000
+[2026-04-11 13:01:07,840][dreambench.runner][INFO] - Running scenario: breakout_ball_bounce
+[2026-04-11 13:01:08,595][dreambench.runner][INFO] -   breakout_ball_bounce / physics_consistency: score=0.322
+[2026-04-11 13:01:08,595][dreambench.runner][INFO] - Benchmark complete. Overall score: 0.369
+[2026-04-11 13:01:08,596][__main__][INFO] - Results saved to results/atari/results.json

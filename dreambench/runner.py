@@ -90,6 +90,17 @@ class BenchmarkRunner:
         self, scenario: Scenario, gt_trajectory: Trajectory
     ) -> Trajectory:
         """Run the world model on a scenario using the ground-truth initial obs."""
+        # Check if any actions exceed the adapter's action space
+        if hasattr(self.adapter, "num_actions"):
+            max_action = max(scenario.actions) if scenario.actions else 0
+            if max_action >= self.adapter.num_actions:
+                raise ValueError(
+                    f"Scenario '{scenario.name}' requires action {max_action} "
+                    f"but adapter only supports {self.adapter.num_actions} actions "
+                    f"(0-{self.adapter.num_actions - 1}). "
+                    f"This scenario needs a model trained on the matching game."
+                )
+
         # If the adapter supports GT replay (e.g. MockAdapter), provide GT data
         if hasattr(self.adapter, "set_ground_truth"):
             self.adapter.set_ground_truth(

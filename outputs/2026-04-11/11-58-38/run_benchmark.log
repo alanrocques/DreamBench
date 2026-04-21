@@ -1,0 +1,15 @@
+[2026-04-11 11:58:40,045][__main__][INFO] - Loaded adapter: delta_iris_crafter
+[2026-04-11 11:58:40,046][__main__][INFO] - Loaded env wrapper: mock
+[2026-04-11 11:58:40,048][__main__][INFO] - Loaded 5 scenarios from dreambench/envs/mock/scenarios.yaml
+[2026-04-11 11:58:40,049][dreambench.runner][INFO] - Running scenario: mock_reward_test
+[2026-04-11 11:58:40,326][dreambench.runner][INFO] -   mock_reward_test / reward_fidelity: score=0.800
+[2026-04-11 11:58:40,326][dreambench.runner][INFO] - Running scenario: mock_permanence_test
+[2026-04-11 11:58:40,806][dreambench.runner][INFO] -   mock_permanence_test / object_permanence: score=0.065
+[2026-04-11 11:58:40,806][dreambench.runner][INFO] - Running scenario: mock_physics_test
+[2026-04-11 11:58:41,285][dreambench.runner][INFO] -   mock_physics_test / physics_consistency: score=0.461
+[2026-04-11 11:58:41,285][dreambench.runner][INFO] - Running scenario: mock_entity_test
+[2026-04-11 11:58:41,627][dreambench.runner][INFO] -   mock_entity_test / entity_integrity: score=0.044
+[2026-04-11 11:58:41,627][dreambench.runner][INFO] - Running scenario: mock_temporal_test
+[2026-04-11 11:58:41,947][dreambench.runner][INFO] -   mock_temporal_test / temporal_coherence: score=1.000
+[2026-04-11 11:58:41,947][dreambench.runner][INFO] - Benchmark complete. Overall score: 0.474
+[2026-04-11 11:58:41,948][__main__][INFO] - Results saved to results/mock/results.json

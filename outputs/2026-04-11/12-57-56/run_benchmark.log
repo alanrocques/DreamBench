@@ -1,0 +1,25 @@
+[2026-04-11 12:57:59,295][__main__][INFO] - Loaded adapter: diamond_breakout
+[2026-04-11 12:57:59,296][__main__][INFO] - Loaded env wrapper: atari
+[2026-04-11 12:57:59,300][__main__][INFO] - Loaded 10 scenarios from dreambench/envs/atari/scenarios.yaml
+[2026-04-11 12:57:59,300][dreambench.runner][INFO] - Running scenario: breakout_basic_rally
+[2026-04-11 12:57:59,538][dreambench.runner][INFO] -   breakout_basic_rally / reward_fidelity: score=0.067
+[2026-04-11 12:57:59,538][dreambench.runner][INFO] - Running scenario: pong_serve_and_return
+[2026-04-11 12:58:00,703][dreambench.runner][INFO] -   pong_serve_and_return / reward_fidelity: score=0.933
+[2026-04-11 12:58:00,703][dreambench.runner][INFO] - Running scenario: space_invaders_opening
+[2026-04-11 12:58:01,869][dreambench.runner][INFO] -   space_invaders_opening / reward_fidelity: score=1.000
+[2026-04-11 12:58:01,869][dreambench.runner][INFO] - Running scenario: breakout_ball_behind_bricks
+[2026-04-11 12:58:03,477][dreambench.runner][INFO] -   breakout_ball_behind_bricks / object_permanence: score=0.500
+[2026-04-11 12:58:03,478][dreambench.runner][INFO] - Running scenario: space_invaders_enemies_behind_shields
+[2026-04-11 12:58:04,951][dreambench.runner][INFO] -   space_invaders_enemies_behind_shields / object_permanence: score=0.022
+[2026-04-11 12:58:04,951][dreambench.runner][INFO] - Running scenario: space_invaders_enemy_count
+[2026-04-11 12:58:06,264][dreambench.runner][INFO] -   space_invaders_enemy_count / entity_integrity: score=0.344
+[2026-04-11 12:58:06,264][dreambench.runner][INFO] - Running scenario: freeway_chicken_tracking
+[2026-04-11 12:58:07,637][dreambench.runner][INFO] -   freeway_chicken_tracking / entity_integrity: score=0.085
+[2026-04-11 12:58:07,637][dreambench.runner][INFO] - Running scenario: montezuma_room_state
+[2026-04-11 12:58:08,096][dreambench.runner][ERROR] - Scenario 'montezuma_room_state' failed: index out of range in self
+[2026-04-11 12:58:08,096][dreambench.runner][INFO] - Running scenario: pong_ball_trajectory
+[2026-04-11 12:58:09,426][dreambench.runner][INFO] -   pong_ball_trajectory / physics_consistency: score=0.548
+[2026-04-11 12:58:09,427][dreambench.runner][INFO] - Running scenario: breakout_ball_bounce
+[2026-04-11 12:58:09,553][dreambench.runner][INFO] -   breakout_ball_bounce / physics_consistency: score=1.000
+[2026-04-11 12:58:09,553][dreambench.runner][INFO] - Benchmark complete. Overall score: 0.450
+[2026-04-11 12:58:09,555][__main__][INFO] - Results saved to results/atari/results.json

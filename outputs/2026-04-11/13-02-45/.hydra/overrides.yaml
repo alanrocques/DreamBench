@@ -1,0 +1,3 @@
+- model=delta_iris_crafter
+- env=crafter
+- output_dir=results/delta_iris_crafter

@@ -1,0 +1,13 @@
+model:
+  name: delta_iris_crafter
+  adapter: dreambench.adapters.delta_iris.DeltaIRISAdapter
+  checkpoint_path: pretrained
+  device: cpu
+  num_actions: 17
+  obs_size: 64
+env:
+  name: crafter
+  wrapper: dreambench.envs.crafter.wrapper.CrafterEnvWrapper
+  scenarios_path: dreambench/envs/crafter/scenarios.yaml
+output_dir: results/${env.name}
+probes: []

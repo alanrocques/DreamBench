@@ -1,0 +1,14 @@
+model:
+  name: iris_breakout
+  adapter: dreambench.adapters.iris.IRISAdapter
+  checkpoint_path: pretrained
+  game: Breakout
+  device: cpu
+  num_actions: 4
+  obs_size: 64
+env:
+  name: mock
+  wrapper: dreambench.envs.mock.wrapper.MockEnvWrapper
+  scenarios_path: dreambench/envs/mock/scenarios.yaml
+output_dir: results/${env.name}
+probes: []

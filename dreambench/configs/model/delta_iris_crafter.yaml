@@ -1,0 +1,6 @@
+name: delta_iris_crafter
+adapter: dreambench.adapters.delta_iris.DeltaIRISAdapter
+checkpoint_path: pretrained
+device: cpu
+num_actions: 17
+obs_size: 64

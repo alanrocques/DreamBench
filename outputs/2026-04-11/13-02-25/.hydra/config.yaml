@@ -1,0 +1,14 @@
+model:
+  name: diamond_breakout
+  adapter: dreambench.adapters.diamond.DIAMONDAdapter
+  checkpoint_path: pretrained
+  game: Breakout
+  device: cpu
+  num_actions: 4
+  obs_size: 64
+env:
+  name: atari
+  wrapper: dreambench.envs.atari.wrapper.AtariEnvWrapper
+  scenarios_path: dreambench/envs/atari/scenarios.yaml
+output_dir: results/diamond_breakout
+probes: []
